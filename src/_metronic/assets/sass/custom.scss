@@ -1,0 +1,242 @@
+[data-kt-app-layout="dark-sidebar"] .app-sidebar {
+  background-color: #212a33;
+  border-right: 0;
+}
+
+.header-county_title {
+  white-space: nowrap; /* Не переносить текст на следующую строку */
+  overflow: hidden; /* Обрезать текст, если он выходит за пределы */
+  text-overflow: ellipsis; /* Добавить многоточие в конце */
+  cursor: pointer;
+  max-width: 400px; /* Ограничиваем ширину меню */
+}
+
+.disabledinputs-style {
+  cursor: not-allowed !important;
+}
+
+.menu-link-active {
+  background: rgba(74, 144, 226, 0.3) !important;
+  color: #2d2d5e !important;
+}
+
+.search-close {
+  right: 0;
+  top: 0;
+}
+
+.form-check-input:checked {
+  background-color: #007aff !important;
+}
+
+.bg-danger-delete {
+  background: rgba(239, 49, 36, 0.2) !important;
+}
+
+.text-danger {
+  color: #ef3124 !important;
+}
+
+.bg-danger {
+  background-color: #ef3124 !important;
+}
+
+.btn.btn-danger {
+  background-color: #ef3124 !important;
+}
+
+.no-resize {
+  resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.card .card-body {
+  padding: 1rem;
+}
+.card .card-header {
+  padding: 0 1rem;
+}
+
+// table
+
+.table-responsive {
+  position: relative;
+  overflow: auto;
+  max-height: 700px; /* Установите желаемую высоту для прокрутки */
+}
+
+.table thead {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  // background-color: #f8f9fa; /* Фон для `thead` */
+}
+
+.table th {
+  white-space: nowrap;
+  padding: 0.7rem 0.75rem !important;
+}
+
+table td {
+  max-width: 150px; /* Ширина столбца */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // padding: 1rem 0.75rem !important;
+}
+
+.c-table tbody tr:hover {
+  background-color: rgba(128, 128, 128, 0.1) !important;
+}
+
+table tbody .bg-danger-delete:hover {
+  background: rgba(
+    239,
+    49,
+    36,
+    0.3
+  ) !important; /* Красный цвет с прозрачностью */
+}
+
+table tbody .select_without_delete {
+  background: rgba(
+    74,
+    144,
+    226,
+    0.5
+  ) !important; /* Красный цвет с прозрачностью */
+}
+
+table tbody .select_without_delete:hover {
+  background: rgba(
+    74,
+    144,
+    226,
+    0.5
+  ) !important; /* Красный цвет с прозрачностью */
+  color: inherit;
+}
+
+table tbody .select_with_delete {
+  background: rgba(
+    74,
+    144,
+    226,
+    0.3
+  ) !important; /* Красный цвет с прозрачностью */
+}
+
+table tbody .select_with_delete:hover {
+  background: rgba(
+    74,
+    144,
+    226,
+    0.3
+  ) !important; /* Красный цвет с прозрачностью */
+  color: inherit;
+}
+
+th[aria-disabled="true"] {
+  display: table-cell;
+}
+
+th[aria-disabled="false"] {
+  display: none;
+}
+
+.sd-doc-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.sd-doc-table.gy-2 th {
+  white-space: normal;
+}
+
+// MODAL COMPONENT
+
+/* Центрирование модального окна */
+.modal-header {
+  padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-footer {
+  padding: 1.5rem;
+}
+
+.modal-xl {
+  max-width: 1500px !important;
+}
+
+.max-h-450px {
+  max-height: 450px !important;
+}
+
+.c-cursor {
+  cursor: pointer;
+}
+
+.app-header {
+  height: 55px;
+}
+
+.app-sidebar-logo {
+  height: 55px;
+}
+
+// TOGGLE COMPONENT
+.toggle-label {
+  margin-bottom: 1rem;
+}
+
+.toggle-switch {
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+}
+
+.toggle-switch.on {
+  background-color: #ef3124;
+}
+
+.toggle-switch.off {
+  background-color: #d4d4d4;
+}
+
+.toggle-switch.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.toggle-handle {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  transition: left 0.3s;
+}
+
+.toggle-switch.on .toggle-handle {
+  left: 26px;
+}
+
+.toggle-switch.off .toggle-handle {
+  left: 2px;
+}
