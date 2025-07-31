@@ -22,11 +22,13 @@ const DashboardWrapper = () => {
 
   const [rows, setRows] = useState<string[][]>([]);
 
+
 async function getSheetData() {
   // 1. Получаем список листов
-  const meta = await axios.get(
-    `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}`
-  );
+const meta = await axios.get(
+  `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}?key=${API_KEY}`
+);
+  console.log("meta", meta)
   const sheetName = meta.data.sheets[0].properties.title;
 
   // 2. Загружаем данные
